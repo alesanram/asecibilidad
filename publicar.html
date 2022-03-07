@@ -27,8 +27,9 @@
 			<form>
 				<h2>Datos de la publicación</h2>
 				
-				<label>Comunidad donde debe publicarse *
-					<select>
+				<label for="comunidad">Comunidad donde debe publicarse *
+					<select id="comunidad">
+						<option value="">Selecciona una opcion</option>
 						<option value="docencia">Docencia</option>
 						<option value="institucional">Institucional</option>
 						<option value="investigacion">Investigación</option>
@@ -60,102 +61,113 @@
 				<div class="radio">
 					<p>Por favor selecciones una de las dos opciones siguientes:</p>
 					<div>
+						<label for="hombre">
 						<input type="radio" name="genero" id="hombre" value="hombre" />
-						<label for="hombre">Hombre</label>
+						Hombre</label>
 					</div>
 					<div>
+						<label for="mujer">Mujer
 						<input type="radio" name="genero" id="mujer" value="mujer" />
-						<label for="mujer">Mujer</label>
+						</label>
 					</div>
 					</div>
 					<div class="radio">
 					<p>Tipo de documento de indentidad</p>
 					<div>
+						<label for="nif">
 						<input type="radio" name="documento" id="nif" value="nif" />
-						<label for="nif">NIF</label>
+						NIF</label>
 					</div>
 					<div>
+						<label for="nie">NIE
 						<input type="radio" name="documento" id="nie" value="nie" />
-						<label for="nie">NIE</label>
+						</label>
 					</div>
 					<div>
+						<label for="pass">PASS
 						<input type="radio" name="documento" id="pass" value="pass" />
-						<label for="pass">PASS</label>
+						</label>
 					</div>
 					</div>
 		
-					<label for="numero-documento">Número de documento *</label>
-					<input
-					type="text"
-					name="numero-documento"
-					id="numero-documento"
-					placeholder="Escribe el número de documento elegido"
-					required
-					pattern="[A-Za-z]+"
-					minlength="2"
-					maxlength="128"
-					/>
+					<label for="numero-documento">Número de documento *
+						<input
+						type="text"
+						name="numero-documento"
+						id="numero-documento"
+						placeholder="Escribe el número de documento elegido"
+						required
+						pattern="[A-Za-z]+"
+						minlength="2"
+						maxlength="128"
+						/>
+					</label>
 		
-					<label for="email">Correo electrónico *</label>
-					<input
-					type="email"
-					name="email"
-					id="email"
-					placeholder="Escribe el correo electrónico"
-					required
-					/>
+					<label for="email">Correo electrónico *
+						<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Escribe el correo electrónico"
+						required
+						/>
+					</label>
 		
-					<label for="telefono">Teléfono (opcional)</label>
-					<input
-					type="tel"
-					name="telefono"
-					id="telefono"
-					placeholder="Escribe el teléfono"
-					pattern="[0-9]+"
-					minlength="9"
-					maxlength="10"
-					/>
+					<label for="telefono">Teléfono (opcional)
+						<input
+						type="tel"
+						name="telefono"
+						id="telefono"
+						placeholder="Escribe el teléfono"
+						pattern="[0-9]+"
+						minlength="9"
+						maxlength="10"
+						/>
+					</label>
 		
 					<div class="radio">
 					<p>Idioma para la respuesta *</p>
 					<div>
-						<input
-						type="radio"
-						name="idioma-respuesta"
-						id="castellano"
-						value="castellano"
-						/>
-						<label for="castellano">Castellano</label>
+						<label for="castellano">
+							<input
+							type="radio"
+							name="idioma-respuesta"
+							id="castellano"
+							value="castellano"
+							/>
+						Castellano</label>
 					</div>
 					<div>
-						<input
-						type="radio"
-						name="idioma-respuesta"
-						id="catalan"
-						value="calatan"
+						<label for="catalan">
+							<input
+							type="radio"
+							name="idioma-respuesta"
+							id="catalan"
+							value="calatan"
 						/>
-						<label for="catalan">Catalán</label>
+						Catalán</label>
 					</div>
 					</div>
 					<hr />
 		
 					<div>
-					<input
-						type="checkbox"
-						name="politica-de-privacidad"
-						id="politica-de-privacidad"
-						required
-					/>
-					<label for="politica-de-privacidad"
-						>He leído y acepto la política de privacidad y el aviso legal
+					<label for="politica-de-privacidad">
+						<input
+							type="checkbox"
+							name="politica-de-privacidad"
+							id="politica-de-privacidad"
+							required
+						/>
+					
+						He leído y acepto la política de privacidad y el aviso legal
 						*</label
 					>
 					</div>
 		
 					<div>
+						<label for="ser-informado">
 					<input type="checkbox" name="ser-informado" id="ser-informado" />
-					<label for="ser-informado"
-						>Dese ser informado sobre las nuevas incorporaciones al
+					Dese ser informado sobre las nuevas incorporaciones al
 						repositorio</label
 					>
 					</div>
